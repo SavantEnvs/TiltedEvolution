@@ -1,0 +1,10 @@
+project: savantenvs/TiltedEvolution
+target: fuzz_esm_loader
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_esm_loader/testsuite
+
+cmds:
+  - cmd: /mayhem/fuzz_esm_loader
+    libfuzzer: true
+    timeout: 5

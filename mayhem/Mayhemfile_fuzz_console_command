@@ -1,0 +1,10 @@
+project: savantenvs/TiltedEvolution
+target: fuzz_console_command
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_console_command/testsuite
+
+cmds:
+  - cmd: /mayhem/fuzz_console_command
+    libfuzzer: true
+    timeout: 5

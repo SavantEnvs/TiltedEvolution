@@ -1,0 +1,11 @@
+[Resource]
+name = "my-resource"
+version = 1.0.0
+apiset = 1.0.0
+description = "A resource that does stuff"
+keywords = ["selfmade", "resource"]
+license = "MIT"
+repository = ""
+homepage = ""
+entrypoint = "test.lua"
+dependencies = ["dependency-a@1.0.0", "dependency-b@1.0.0"]
